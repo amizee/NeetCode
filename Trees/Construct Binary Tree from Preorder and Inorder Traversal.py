@@ -18,7 +18,7 @@ class Solution:
             
         return dfs(0, len(inorder) - 1)
 
-# Preorder array determines the order each node should be created
-# Inorder array determines whether a node is on the left or right subtree of a root node
+# Preorder array determines the order each node should be created (node -> left -> right)
+# Inorder array determines whether a node is on the left or right subtree of a root node (left -> node -> right)
 # Intuition: Recursively build the left and right subtrees using DFS by splitting the range [l, r] into two parts for its left and right subtree and creating a new node in each call
 # The indices for inorder are pre-calculated to achieve O(n) time
