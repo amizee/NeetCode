@@ -8,6 +8,7 @@ class Solution:
 
         second = slow.next # Right half that needs to be reversed can be smaller than the left half
         slow.next = None # "Splits" the list in half
+        # Reverse the second half of the list
         prev = None
         while second:
             tmp = second.next
