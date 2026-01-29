@@ -1,3 +1,5 @@
+from typing import List
+
 # Sliding window
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
