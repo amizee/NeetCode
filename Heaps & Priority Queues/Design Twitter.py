@@ -40,3 +40,7 @@ class Twitter:
 
     def unfollow(self, followerId: int, followeeId: int) -> None:
         self.followers[followerId].discard(followeeId)
+
+# Intuition: track the followers mapping uid to a set and tweets mapping a uid to a list.
+# To get the news feed, store the most recent tweet from each follower in a max heap. Then, add the next most recent for this same follower back to the heap by storing the index as well.
+# This avoids having to go through every tweet and reduces the space complexity
