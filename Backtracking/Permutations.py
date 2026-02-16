@@ -1,3 +1,5 @@
+from typing import List
+
 # Time: O(n^2 * n!)
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
