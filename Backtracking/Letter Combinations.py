@@ -26,3 +26,8 @@ class Solution:
         if digits:
             dfs(0, "")
         return res
+
+# Intuition: loop through each digit and go through all possible combinations of letters.
+# Base case - once we've reached the end of digits we must have found a valid solution.
+# If digits is length 3, then 1st layer is 4, 2nd layer is 16 and 3rd layer is 64 (i.e. 4^n)
+# Time complexity: n * 4^n
