@@ -29,3 +29,7 @@ class Solution:
                 if backtrack(0, r, c):
                     return True
         return False
+    
+# Intuition: matrix DFS! by trying to start the word from each cell and exploring up, left, down or right.
+# Use a hashset to see if a cell on the current path has already been explored.
+# Check out of bounds, if the current character matches the word or if this cell has been explored.
