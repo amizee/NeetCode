@@ -22,4 +22,6 @@ class Solution:
                 dfs(i)
                 res += 1
         return res
-    
+  
+# Intuition: Treat each node as a potential separate connected component.
+# From each node that hasn't been visited yet, dfs() as far as you can similar to the Matrix island problems when you've found a 1.

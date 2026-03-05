@@ -37,3 +37,9 @@ class Solution:
                 return [u, v]
 
         return []
+
+# Intuition: brute force approach is to build the graph one edge at a time and dfs through the graph to check for cycles. The first edge you add that causes a cycle is the redundant connection. (i.e. its the last cycle edge in the list)
+# Optimal - only dfs() through the graph once. Use a set visit to check for cycles. Once you've found a cycle, this must be the node where the cycle begins, so you set cycleStart to this node.
+# When the recursion returns back, mark every node as part of the path of the cycle until you reach cycleStart in a set.
+# Now you have every node that is part of the cycle edges in "cycle"
+# By looping through the edges in reverse order and checking both nodes exist in "cycle", it returns the correct edge.
