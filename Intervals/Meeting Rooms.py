@@ -19,3 +19,5 @@ class Solution:
                 return False
             prevEnd = max(prevEnd, interval.end)
         return True
+
+# Intuition: check for overlap of any meetings (i.e. if any meeting starts before one has ended)

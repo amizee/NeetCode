@@ -21,3 +21,6 @@ class Solution:
             i += 1
 
         return res
+
+# Intuition: no overlap on the left of the start and the right of the end of newInterval.
+# This means middle loop covers all intervals that need to be merged.

@@ -16,3 +16,6 @@ class Solution:
             else:
                 prevEnd = newInterval[1]
         return res
+    
+# Intuition: intervals only overlap if the end of one interval is more than the start of another.
+# When you remove an interval, always remove the interval with the lowest end to minimise the number of removals. (sort of greedy solution)

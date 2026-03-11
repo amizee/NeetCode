@@ -18,5 +18,5 @@ class Solution:
         res.append([s, e])
         return res
 
-
-    
+# Intuition: if there's an overlap, update the end value of to "merge" the intervals
+# If there's no overlap, add the previous interval. So at the end, we need to add the last interval and potentitally it's a merged interval so it doesn't reach the first res.append().
