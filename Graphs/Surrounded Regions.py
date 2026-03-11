@@ -20,7 +20,6 @@ class Solution:
         for i in range(ROWS):
             dfs(i, 0)
             dfs(i, COLS - 1)
-        
         for r in range(ROWS):
             for c in range(COLS):
                 if (r, c) not in visit:
