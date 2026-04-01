@@ -6,7 +6,7 @@ class Solution:
         total = 0
         res = 0
         for i in range(len(gas)):
-            total += gas[i] - cost[i]
+            total += (gas[i] - cost[i])
 
             if total < 0:
                 total = 0
